@@ -1,3 +1,4 @@
+import math
 import urllib.parse
 import requests
 import json
@@ -48,11 +49,12 @@ for line in f:
         if (lineP == "."):
             p = translateApi(paragraph,"pt",apiKey)
             os.system('clear')
-            print ("Progress : "+str((i/13205)*100)+"%\n")
+            print ("Progress : "+str(round(((i/13205)*100),2))+"%\n")
             print (p)
             with open(fileNameTranslated, 'a') as arquivo:
                 arquivo.write(p+"\n")           
             paragraph=""
+os.system('clear')            
 print ("100%\n")       
 print (translateApi(paragraph,"pt",apiKey))       
 with open(fileNameTranslated, 'a') as arquivo:

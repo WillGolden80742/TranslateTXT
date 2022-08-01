@@ -42,7 +42,7 @@ p = ""
 i=0
 for line in f:
     lineP = list(line) 
-    paragraph+=line
+    paragraph+=line+"\n"
     i+=1
     if (len(lineP)>3):
         lineP = lineP[len(lineP)-3]
@@ -56,7 +56,8 @@ for line in f:
             paragraph=""
 os.system('clear')            
 print ("100%\n")       
-print (translateApi(paragraph,"pt",apiKey))       
+p = translateApi(paragraph,"pt",apiKey)
+print (p)       
 with open(fileNameTranslated, 'a') as arquivo:
     arquivo.write(p)        
 

@@ -18,7 +18,7 @@ This project harnesses the power of the Google Translate API to seamlessly trans
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-project.git
+   git clone https://github.com/WillGolden80742/TranslateTXT.git
    cd your-project
    ```
 

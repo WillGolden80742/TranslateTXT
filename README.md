@@ -19,7 +19,6 @@ This project harnesses the power of the Google Translate API to seamlessly trans
 
    ```bash
    git clone https://github.com/WillGolden80742/TranslateTXT.git
-   cd your-project
    ```
 
 2. **Install the required Python packages:**
